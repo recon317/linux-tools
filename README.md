@@ -1,2 +1,2 @@
 # linux-tools
-My implementation of linux tools for windows
+My implementation of Linux tools for Windows via Python

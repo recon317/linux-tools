@@ -33,6 +33,4 @@ def string_search(bin_data: List[int]):
 
 
 
-
-
 string_search(bin_data)
