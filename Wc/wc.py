@@ -1,8 +1,6 @@
-import sys
-import os
-import argparse
-
 from argparse import ArgumentParser, Namespace
+import os
+
 parser = ArgumentParser()
 parser.add_argument('path', help='Input the path of desired file',type=str)
 parser.add_argument('-c', '--bytes', help='print the byte counts', action='store_true')
@@ -31,8 +29,7 @@ def line_count(file, file_path):
     print(f"{len(split_words)} {file_path}")
 
 def char_count(file, file_path):
-    split_chars = list(file)
-    print(f"{len(split_chars)} {file_path}")
+    print(f"{len(file)} {file_path}")
 
 def byte_count(file_path):
     byte_size = os.path.getsize(file_path)
